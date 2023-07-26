@@ -151,7 +151,124 @@
         </div>
       </div>
     </header>
-   
-   
+
+    <main>
+      <!-- =============== Deal of the day Section================ -->
+      <section>
+        <div
+          class="p-5 lg:p-0 lg:flex lg:justify-between lg:items-center lg:mt-[140px] max-w-7xl mx-auto"
+        >
+          <div class="text-center lg:text-start">
+            <h1 class="lg:text-5xl font-bold text-black mb-3">
+              Deal of the day
+            </h1>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <!-- ======================== -->
+          <div
+            class="flex justify-center mt-5 md:flex md:justify-center md:mt-5 lg:flex items-center gap-5"
+          >
+            <div class="">
+              <div class="flex gap-3 items-center mb-2">
+                <h1 class="lg:text-5xl font-bold text-black">29</h1>
+                <img class="object-contain" src="./image/Frame.jpg" alt="" />
+              </div>
+              <h1>Days</h1>
+            </div>
+            <div class="">
+              <div class="flex gap-3 items-center mb-2">
+                <h1 class="lg:text-5xl font-bold text-black">15</h1>
+                <img class="object-contain" src="./image/Frame.jpg" alt="" />
+              </div>
+              <h1>Hours</h1>
+            </div>
+            <div class="">
+              <div class="flex gap-3 items-center mb-2">
+                <h1 class="lg:text-5xl font-bold text-black">25</h1>
+                <img class="object-contain" src="./image/Frame.jpg" alt="" />
+              </div>
+              <h1>Minutes</h1>
+            </div>
+            <div class="">
+              <div class="flex gap-3 items-center mb-2">
+                <h1 class="lg:text-5xl font-bold text-black">08</h1>
+                <img class="object-contain" src="./image/Frame.jpg" alt="" />
+              </div>
+              <h1>Seconds</h1>
+            </div>
+          </div>
+        </div>
+        <!-- ======================= Image Area================== -->
+        <div
+          class="w-full max-w-7xl mx-auto lg:mt-[48px] grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div
+            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
+          >
+            <img class="mx-auto" src="./image/fruit6.png" alt="" />
+            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+            <hr />
+            <h1 class="mt-7">Apples</h1>
+            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+            <button class="text-red-500">Details</button>
+          </div>
+          <div
+            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
+          >
+            <img class="mx-auto" src="./image/fruit6.png" alt="" />
+            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+            <hr />
+            <h1 class="mt-7">Apples</h1>
+            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+            <button class="text-red-500">Details</button>
+          </div>
+          <div
+            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
+          >
+            <img class="mx-auto" src="./image/fruit6.png" alt="" />
+            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+            <hr />
+            <h1 class="mt-7">Apples</h1>
+            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+            <button class="text-red-500">Details</button>
+          </div>
+          <div
+            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
+          >
+            <img class="mx-auto" src="./image/fruit6.png" alt="" />
+            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+            <hr />
+            <h1 class="mt-7">Apples</h1>
+            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn" onclick="my_modal_1.showModal()">
+              open modal
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">
+                  Press ESC key or click the button below to close
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <p
+          class="text-center cursor-pointer bg-red-600 w-fit mx-auto mt-10 text-white p-1 rounded"
+        >
+          Show All
+        </p>
+      </section>
+      
+    </main>
   </body>
 </html>
