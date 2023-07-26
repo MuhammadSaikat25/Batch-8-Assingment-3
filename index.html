@@ -16,6 +16,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- ============== Nav Section============ -->
+    <nav class="max-w-7xl mx-auto lg:mt-10">
+      <div class="navbar lg:bg-[#F85559] lg:rounded-[600px] lg:flex lg:justify-between lg:p-5">
+        <div class="navbar-start lg:hidden">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-semibold"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              
+            </ul>
+          </div>
+          <div class="flex items-center font-bold w-full">
+            <img class="w-[30px] h-[25px] object-contain" src="./image/logo.png" alt="">
+              <h1>Fruit Burst</h1>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-white font-semibold px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex text-white font-semibold items-center">
+          <img class="w-[40px] h-[30px] object-contain" src="./image/logo.png" alt="">
+            <h1>Fruit Burst</h1>
+        </div>
+        <div class="hidden lg:block relative w-[20%]">
+          <input class="rounded-2xl w-full p-1" type="text" placeholder="Search Here">
+          <img class="absolute top-1 right-1" src="./image/Frame2.png" alt="">
+        </div>
+      </div>
+    </nav>
     <!-- =========== Header Section========== -->
     <header class="max-w-7xl mx-auto w-full mt-[56px] relative">
       <div class="carousel w-full relative">
