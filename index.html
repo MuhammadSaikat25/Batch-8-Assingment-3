@@ -1,546 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html data-theme="light"></html>
+<html data-theme="light">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Burst</title>
+</html>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- ============== Nav Section============ -->
-    <nav class="max-w-7xl mx-auto lg:mt-10">
-      <div class="navbar lg:bg-[#F85559] lg:rounded-[600px] lg:flex lg:justify-between lg:p-5">
-        <div class="navbar-start lg:hidden">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-semibold"
-            >
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-              
-            </ul>
-          </div>
-          <div class="flex items-center font-bold w-full">
-            <img class="w-[30px] h-[25px] object-contain" src="./image/logo.png" alt="">
-              <h1>Fruit Burst</h1>
-          </div>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal text-white font-semibold px-1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Burst</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- ============== Nav Section============ -->
+  <nav class="max-w-7xl mx-auto lg:mt-10">
+    <div class="navbar lg:bg-[#F85559] lg:rounded-[600px] lg:flex lg:justify-between lg:p-5">
+      <div class="navbar-start lg:hidden">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-semibold">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
             <li><a>Shop</a></li>
             <li><a>All Fruits</a></li>
+
           </ul>
         </div>
-        <div class="hidden lg:flex text-white font-semibold items-center">
-          <img class="w-[40px] h-[30px] object-contain" src="./image/logo.png" alt="">
-            <h1>Fruit Burst</h1>
-        </div>
-        <div class="hidden lg:block relative w-[20%]">
-          <input class="rounded-2xl w-full p-1" type="text" placeholder="Search Here">
-          <img class="absolute top-1 right-1" src="./image/Frame2.png" alt="">
+        <div class="flex items-center font-bold w-full">
+          <img class="w-[30px] h-[25px] object-contain" src="./image/logo.png" alt="">
+          <h1>Fruit Burst</h1>
         </div>
       </div>
-    </nav>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal text-white font-semibold px-1">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="hidden lg:flex text-white font-semibold items-center">
+        <img class="w-[40px] h-[30px] object-contain" src="./image/logo.png" alt="">
+        <h1>Fruit Burst</h1>
+      </div>
+      <div class="hidden lg:block relative w-[20%]">
+        <input class="rounded-2xl w-full p-1" type="text" placeholder="Search Here">
+        <img class="absolute top-1 right-1" src="./image/Frame2.png" alt="">
+      </div>
+    </div>
+  </nav>
 
-    <!-- =========== Header Section========== -->
-    <header class="max-w-7xl mx-auto w-full mt-[56px] relative">
-      <div class="carousel w-full relative">
-        <div id="slide1" class="carousel-item relative w-full">
-          <h1
-            class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center"
-          >
-            Exotic tastes at your <br /><br />
-            <span class="mt-5 lg:mt-20">doorstep</span>
-          </h1>
-          <p
-            class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white"
-          >
-            We supply highly quality organic products
-          </p>
-          <button
-            class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md"
-          >
-            Shop Now
-          </button>
-          <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
+  <!-- =========== Header Section========== -->
+  <header class="max-w-7xl mx-auto w-full mt-[56px] relative">
+    <div class="carousel w-full relative">
+      <div id="slide1" class="carousel-item relative w-full">
+        <h1
+          class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center">
+          Exotic tastes at your <br /><br />
+          <span class="mt-5 lg:mt-20">doorstep</span>
+        </h1>
+        <p
+          class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white">
+          We supply highly quality organic products
+        </p>
+        <button
+          class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md">
+          Shop Now
+        </button>
+        <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
 
-          <img src="./image/banner4.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle w-3">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
+        <img src="./image/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle w-3">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <h1
-            class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center"
-          >
-            Exotic tastes at your <br /><br />
-            <span class="mt-5 lg:mt-20">doorstep</span>
-          </h1>
-          <p
-            class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white"
-          >
-            We supply highly quality organic products
-          </p>
-          <button
-            class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md"
-          >
-            Shop Now
-          </button>
-          <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
-          <img src="./image/banner2.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <h1
+          class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center">
+          Exotic tastes at your <br /><br />
+          <span class="mt-5 lg:mt-20">doorstep</span>
+        </h1>
+        <p
+          class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white">
+          We supply highly quality organic products
+        </p>
+        <button
+          class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md">
+          Shop Now
+        </button>
+        <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
+        <img src="./image/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <h1
-            class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center"
-          >
-            Exotic tastes at your <br /><br />
-            <span class="mt-5 lg:mt-20">doorstep</span>
-          </h1>
-          <p
-            class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white"
-          >
-            We supply highly quality organic products
-          </p>
-          <button
-            class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md"
-          >
-            Shop Now
-          </button>
-          <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
-          <img src="./image/banner3.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <h1
+          class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center">
+          Exotic tastes at your <br /><br />
+          <span class="mt-5 lg:mt-20">doorstep</span>
+        </h1>
+        <p
+          class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white">
+          We supply highly quality organic products
+        </p>
+        <button
+          class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md">
+          Shop Now
+        </button>
+        <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
+        <img src="./image/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <h1
-            class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center"
-          >
-            Exotic tastes at your <br /><br />
-            <span class="mt-5 lg:mt-20">doorstep</span>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <h1
+          class="absolute top-3 left-[100px] md:left-[230px] md:text-4xl lg:top-10 lg:left-[270px] z-10 text-white lg:text-[72px] font-bold text-center">
+          Exotic tastes at your <br /><br />
+          <span class="mt-5 lg:mt-20">doorstep</span>
+        </h1>
+        <p
+          class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white">
+          We supply highly quality organic products
+        </p>
+        <button
+          class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md">
+          Shop Now
+        </button>
+        <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
+        <img src="./image/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- ========================== -->
+    <div
+      class="bg-white hidden h-[180px] lg:w-[70%] mx-auto absolute -bottom-14 left-[220px] p-6 rounded-md lg:flex justify-between">
+      <div class="">
+        <img src="./image/fruit1.png" alt="" />
+        <h1>Strawberry</h1>
+      </div>
+      <div class="">
+        <img src="./image/fruit2.png" alt="" />
+        <h1>Orange</h1>
+      </div>
+      <div class="">
+        <img src="./image/fruit3.png" alt="" />
+        <h1>Mango</h1>
+      </div>
+      <div class="">
+        <img src="./image/fruit4.png" alt="" />
+        <h1>Strawberry</h1>
+      </div>
+      <div class="">
+        <img src="./image/fruit5.png" alt="" />
+        <h1>Orange</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============== Deal of the day Section================ -->
+    <section>
+      <div class="p-4 lg:p-0 lg:flex lg:justify-between lg:items-center lg:mt-[140px] max-w-7xl mx-auto">
+        <div class="text-center lg:text-start">
+          <h1 class="lg:text-5xl font-bold text-black mb-3">
+            Deal of the day
           </h1>
-          <p
-            class="absolute text-xs top-[90px] z-10 left-[80px] md:left-[300px] md:top-[150px] lg:top-[230px] lg:left-[480px] text-white"
-          >
-            We supply highly quality organic products
+          <p>
+            Contrary to popular belief, is not simply random text. It has
+            roots in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
           </p>
-          <button
-            class="absolute bottom-[10px] left-[150px] z-10 md:bottom-[110px] md:left-[350px] lg:bottom-[200px] lg:left-[570px] bg-red-500 text-white font-semibold p-1 rounded-md"
-          >
-            Shop Now
-          </button>
-          <h1 class="w-[100%] h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
-          <img src="./image/banner1.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+        <!-- ======================== -->
+        <div class="flex justify-center mt-5 md:flex md:justify-center md:mt-5 lg:flex items-center gap-5">
+          <div class="">
+            <div class="flex gap-3 items-center mb-2">
+              <h1 class="lg:text-5xl font-bold text-black">29</h1>
+              <img class="object-contain" src="./image/Frame.jpg" alt="" />
+            </div>
+            <h1>Days</h1>
+          </div>
+          <div class="">
+            <div class="flex gap-3 items-center mb-2">
+              <h1 class="lg:text-5xl font-bold text-black">15</h1>
+              <img class="object-contain" src="./image/Frame.jpg" alt="" />
+            </div>
+            <h1>Hours</h1>
+          </div>
+          <div class="">
+            <div class="flex gap-3 items-center mb-2">
+              <h1 class="lg:text-5xl font-bold text-black">25</h1>
+              <img class="object-contain" src="./image/Frame.jpg" alt="" />
+            </div>
+            <h1>Minutes</h1>
+          </div>
+          <div class="">
+            <div class="flex gap-3 items-center mb-2">
+              <h1 class="lg:text-5xl font-bold text-black">08</h1>
+              <img class="object-contain" src="./image/Frame.jpg" alt="" />
+            </div>
+            <h1>Seconds</h1>
           </div>
         </div>
       </div>
+      <!-- ======================= Image Area================== -->
+      <div class="w-full max-w-7xl mx-auto lg:mt-[48px] grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md">
+          <img class="mx-auto" src="./image/fruit6.png" alt="" />
+          <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+          <hr />
+          <h1 class="mt-7">Apples</h1>
+          <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+          <button class="text-red-500">Details</button>
+        </div>
+        <div class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md">
+          <img class="mx-auto" src="./image/fruit7.png" alt="" />
+          <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+          <hr />
+          <h1 class="mt-7">Apples</h1>
+          <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+          <button class="text-red-500">Details</button>
+        </div>
+        <div class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md">
+          <img class="mx-auto" src="./image/fruit8.png" alt="" />
+          <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+          <hr />
+          <h1 class="mt-7">Apples</h1>
+          <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+          <button class="text-red-500">Details</button>
+
+        </div>
+        <div class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md">
+          <img class="mx-auto" src="./image/fruit9.png" alt="" />
+          <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
+          <hr />
+          <h1 class="mt-7">Apples</h1>
+          <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+          <button class="text-red-500">Details</button>
+
+        </div>
+      </div>
+      <p class="text-center cursor-pointer bg-red-600 w-fit mx-auto mt-10 text-white p-1 rounded">
+        Show All
+      </p>
+    </section>
+
+    <!-- =================Meet the team section============== -->
+    <section class="max-w-7xl mx-auto w-full lg:mt-[160px] mt-20 mb-20 relative">
+      <h1 class="w-full h-[1100px] lg:w-[100%] lg:h-[100%] bg-gray-950 absolute bg-opacity-50"></h1>
+      <img class="h-[1100px] mx-auto lg:h-[600px] lg:w-full object-cover" src="./image/team.png" alt="" />
+      <h1
+        class="text-white absolute top-3 left-[120px] md:top-5 md:left-[300px] lg:top-14 lg:left-[400px] lg:text-5xl font-bold">
+        Meet the team section
+      </h1>
+      <h1
+        class="text-white text-center absolute top-[50px] text-xs md:top-16 md:left-[130px] lg:text-base lg:top-32 lg:left-[350px]">
+        Contrary to popular belief, is not simply random text. It has roots in
+        a piece of classical <br />
+        Latin literature from 45 BC, making it over 2000 years old.
+      </h1>
       <!-- ========================== -->
       <div
-        class="bg-white hidden h-[180px] lg:w-[70%] mx-auto absolute -bottom-14 left-[220px] p-6 rounded-md lg:flex justify-between"
-      >
-        <div class="">
-          <img src="./image/fruit1.png" alt="" />
-          <h1>Strawberry</h1>
-        </div>
-        <div class="">
-          <img src="./image/fruit2.png" alt="" />
-          <h1>Orange</h1>
-        </div>
-        <div class="">
-          <img src="./image/fruit3.png" alt="" />
-          <h1>Mango</h1>
-        </div>
-        <div class="">
-          <img src="./image/fruit4.png" alt="" />
-          <h1>Strawberry</h1>
-        </div>
-        <div class="">
-          <img src="./image/fruit5.png" alt="" />
-          <h1>Orange</h1>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- =============== Deal of the day Section================ -->
-      <section>
-        <div
-          class="p-4 lg:p-0 lg:flex lg:justify-between lg:items-center lg:mt-[140px] max-w-7xl mx-auto"
-        >
-          <div class="text-center lg:text-start">
-            <h1 class="lg:text-5xl font-bold text-black mb-3">
-              Deal of the day
-            </h1>
-            <p>
-              Contrary to popular belief, is not simply random text. It has
-              roots in a piece of classical <br />
-              Latin literature from 45 BC, making it over 2000 years old.
-            </p>
-          </div>
-          <!-- ======================== -->
-          <div
-            class="flex justify-center mt-5 md:flex md:justify-center md:mt-5 lg:flex items-center gap-5"
-          >
-            <div class="">
-              <div class="flex gap-3 items-center mb-2">
-                <h1 class="lg:text-5xl font-bold text-black">29</h1>
-                <img class="object-contain" src="./image/Frame.jpg" alt="" />
-              </div>
-              <h1>Days</h1>
-            </div>
-            <div class="">
-              <div class="flex gap-3 items-center mb-2">
-                <h1 class="lg:text-5xl font-bold text-black">15</h1>
-                <img class="object-contain" src="./image/Frame.jpg" alt="" />
-              </div>
-              <h1>Hours</h1>
-            </div>
-            <div class="">
-              <div class="flex gap-3 items-center mb-2">
-                <h1 class="lg:text-5xl font-bold text-black">25</h1>
-                <img class="object-contain" src="./image/Frame.jpg" alt="" />
-              </div>
-              <h1>Minutes</h1>
-            </div>
-            <div class="">
-              <div class="flex gap-3 items-center mb-2">
-                <h1 class="lg:text-5xl font-bold text-black">08</h1>
-                <img class="object-contain" src="./image/Frame.jpg" alt="" />
-              </div>
-              <h1>Seconds</h1>
-            </div>
+        class="absolute top-[150px] left-[130px] md:grid md:grid-cols-2 md:gap-10 md:left-[250px] lg:left-[250px] lg:top-[200px] lg:flex lg:gap-20">
+        <div class="text-center mb-5">
+          <img src="./image/member1.png" alt="" />
+          <h1 class="text-white">Awlad Hossain</h1>
+          <h1 class="text-white">Fruits Expert</h1>
+          <div class="flex justify-center mt-2 gap-3">
+            <img class="rounded-xl" src="./image/fb.jpg" alt="" />
+            <img class="rounded-xl" src="./image/tw.jpg" alt="" />
+            <img class="rounded-xl" src="./image/in.jpg" alt="" />
           </div>
         </div>
-        <!-- ======================= Image Area================== -->
-        <div
-          class="w-full max-w-7xl mx-auto lg:mt-[48px] grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-        >
-          <div
-            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
-          >
-            <img class="mx-auto" src="./image/fruit6.png" alt="" />
-            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
-            <hr />
-            <h1 class="mt-7">Apples</h1>
-            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
-            <button class="text-red-500">Details</button>
-          </div>
-          <div
-            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
-          >
-            <img class="mx-auto" src="./image/fruit7.png" alt="" />
-            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
-            <hr />
-            <h1 class="mt-7">Apples</h1>
-            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
-            <button class="text-red-500">Details</button>
-          </div>
-          <div
-            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
-          >
-            <img class="mx-auto" src="./image/fruit8.png" alt="" />
-            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
-            <hr />
-            <h1 class="mt-7">Apples</h1>
-            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
-            <button class="text-red-500">Details</button>
-          </div>
-          <div
-            class="w-[300px] h-[400px] mx-auto border p-3 text-center border-gray-400 rounded-md"
-          >
-            <img class="mx-auto" src="./image/fruit9.png" alt="" />
-            <h1 class="mt-7 mb-5 text-black font-semibold">12.90$ - 18.85$</h1>
-            <hr />
-            <h1 class="mt-7">Apples</h1>
-            <img class="mb-5 mt-5 mx-auto" src="./image/rating.jpg" alt="" />
+        <div class="text-center mb-5">
+          <img src="./image/member2.png" alt="" />
+          <h1 class="text-white">Safia Chowdhury</h1>
+          <h1 class="text-white">Fruits Expert</h1>
+          <div class="flex justify-center mt-2 gap-3">
+            <img class="rounded-xl" src="./image/fb.jpg" alt="" />
+            <img class="rounded-xl" src="./image/tw.jpg" alt="" />
+            <img class="rounded-xl" src="./image/in.jpg" alt="" />
           </div>
         </div>
-        <p
-          class="text-center cursor-pointer bg-red-600 w-fit mx-auto mt-10 text-white p-1 rounded"
-        >
-          Show All
-        </p>
-      </section>
-
-      <!-- =================Meet the team section============== -->
-      <section
-        class="max-w-7xl mx-auto w-full lg:mt-[160px] mt-20 mb-20 relative"
-      >
-        <h1
-          class="w-full h-[1100px] lg:w-[100%] lg:h-[100%] bg-gray-950 absolute bg-opacity-50"
-        ></h1>
-        <img
-          class="h-[1100px] mx-auto lg:h-[600px] lg:w-full object-cover"
-          src="./image/team.png"
-          alt=""
-        />
-        <h1
-          class="text-white absolute top-3 left-[120px] md:top-5 md:left-[300px] lg:top-14 lg:left-[400px] lg:text-5xl font-bold"
-        >
-          Meet the team section
-        </h1>
-        <h1
-          class="text-white text-center absolute top-[50px] text-xs md:top-16 md:left-[130px] lg:text-base lg:top-32 lg:left-[350px]"
-        >
-          Contrary to popular belief, is not simply random text. It has roots in
-          a piece of classical <br />
-          Latin literature from 45 BC, making it over 2000 years old.
-        </h1>
-        <!-- ========================== -->
-        <div
-          class="absolute top-[150px] left-[130px] md:grid md:grid-cols-2 md:gap-10 md:left-[250px] lg:left-[250px] lg:top-[200px] lg:flex lg:gap-20"
-        >
-          <div class="text-center mb-5">
-            <img src="./image/member1.png" alt="" />
-            <h1 class="text-white">Awlad Hossain</h1>
-            <h1 class="text-white">Fruits Expert</h1>
-            <div class="flex justify-center mt-2 gap-3">
-              <img class="rounded-xl" src="./image/fb.jpg" alt="" />
-              <img class="rounded-xl" src="./image/tw.jpg" alt="" />
-              <img class="rounded-xl" src="./image/in.jpg" alt="" />
-            </div>
-          </div>
-          <div class="text-center mb-5">
-            <img src="./image/member2.png" alt="" />
-            <h1 class="text-white">Safia Chowdhury</h1>
-            <h1 class="text-white">Fruits Expert</h1>
-            <div class="flex justify-center mt-2 gap-3">
-              <img class="rounded-xl" src="./image/fb.jpg" alt="" />
-              <img class="rounded-xl" src="./image/tw.jpg" alt="" />
-              <img class="rounded-xl" src="./image/in.jpg" alt="" />
-            </div>
-          </div>
-          <div class="text-center mb-5">
-            <img src="./image/member3.png" alt="" />
-            <h1 class="text-white">Rokib Hossain</h1>
-            <h1 class="text-white">Fruits Expert</h1>
-            <div class="flex justify-center mt-2 gap-3">
-              <img class="rounded-xl" src="./image/fb.jpg" alt="" />
-              <img class="rounded-xl" src="./image/tw.jpg" alt="" />
-              <img class="rounded-xl" src="./image/in.jpg" alt="" />
-            </div>
-          </div>
-          <div class="text-center">
-            <img src="./image/member4.png" alt="" />
-            <h1 class="text-white">Chaity</h1>
-            <h1 class="text-white">Fruits Expert</h1>
-            <div class="flex justify-center mt-2 gap-3">
-              <img class="rounded-xl" src="./image/fb.jpg" alt="" />
-              <img class="rounded-xl" src="./image/tw.jpg" alt="" />
-              <img class="rounded-xl" src="./image/in.jpg" alt="" />
-            </div>
+        <div class="text-center mb-5">
+          <img src="./image/member3.png" alt="" />
+          <h1 class="text-white">Rokib Hossain</h1>
+          <h1 class="text-white">Fruits Expert</h1>
+          <div class="flex justify-center mt-2 gap-3">
+            <img class="rounded-xl" src="./image/fb.jpg" alt="" />
+            <img class="rounded-xl" src="./image/tw.jpg" alt="" />
+            <img class="rounded-xl" src="./image/in.jpg" alt="" />
           </div>
         </div>
-      </section>
-
-      <!-- ============= Why Choose Us Section========== -->
-      <section class="max-w-7xl mx-auto w-full mb-10  ">
         <div class="text-center">
-            <h1 class="font-bold text-black text-xl">Why Choose Us</h1>
-            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-        </div>
-        <!-- ===================== -->
-        <div class="hidden lg:flex gap-5 lg:items-center mt-[48px]">
-          <div class="">
-            <div class="flex gap-5 items-center relative">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/group.jpg" alt="">
-              <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black">Dedicated Team</h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class="flex gap-5 items-center relative mb-5 mt-5">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/love-1.jpg" alt="">
-              <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black">Fresh is Best</h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class="flex gap-5 items-center relative">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/gift-box1.png" alt="">
-              <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black">Gift Certificates</h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
+          <img src="./image/member4.png" alt="" />
+          <h1 class="text-white">Chaity</h1>
+          <h1 class="text-white">Fruits Expert</h1>
+          <div class="flex justify-center mt-2 gap-3">
+            <img class="rounded-xl" src="./image/fb.jpg" alt="" />
+            <img class="rounded-xl" src="./image/tw.jpg" alt="" />
+            <img class="rounded-xl" src="./image/in.jpg" alt="" />
           </div>
-          <!-- ======================= -->
-          <div class="">
-              <img class="w-[300px] h-[300px]" src="./image/whychoose.png" alt="">
-          </div>
-          <!-- ============================ -->
-          <div class="">
-            <div class="flex gap-5 items-center relative">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/gift-box.png" alt="">
-              <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black">Integrated Supplier</h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class="flex gap-5 items-center relative mb-5 mt-5">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/ice-cream1.jpg" alt="">
-              <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black">Sustainable Practice</h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class="flex gap-5 items-center relative">
-              <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/like1.jpg" alt="">
-              <img class="w-[35px] h-[35px] absolute top-3 -left-1" src="./image/Ellipse.jpg" alt="">
-              <div class="space-y-1">
-                <h1 class="text-xl font-semibold text-black"></h1>
-                <h1 class="w-20 h-0 border"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-          </div>
-          </div>
-          <!-- ************************************* -->
-
-          <div class="lg:hidden mt-[48px]">
-            <div class="mb-5">
-              <img class="w-[300px] h-[300px] mx-auto" src="./image/whychoose.png" alt="">
-          </div>
-            <!-- ================================ -->
-            <div class=" w-full mb-3">
-              <img class="mx-auto" src="./image/group.jpg" alt="">
-              <div class="space-y-1 text-center">
-                <h1 class="text-xl font-semibold text-black">Dedicated Team</h1>
-                <h1 class="w-20 h-0 border mx-auto"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class=" w-ful">
-              <img class="mx-auto" src="./image/love-1.jpg" alt="">
-              <div class="space-y-1 text-center">
-                <h1 class="text-xl font-semibold text-black">Fresh is Best</h1>
-                <h1 class="w-20 h-0 border mx-auto"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class=" w-ful mb-4 mt-4">
-              <img class="mx-auto" src="./image/gift-box1.png" alt="">
-              <div class="space-y-1 text-center">
-                <h1 class="text-xl font-semibold text-black">Gift Certificates</h1>
-                <h1 class="w-20 h-0 border mx-auto"></h1>
-                <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            
-            <!-- ============================ -->
-            <div class="space-y-4">
-              <div class=" w-ful">
-                <img class="mx-auto" src="./image/gift-box.png" alt="">
-                <div class="space-y-1 text-center">
-                  <h1 class="text-xl font-semibold text-black">Integrated Supplier</h1>
-                  <h1 class="w-20 h-0 border mx-auto"></h1>
-                  <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-                </div>
-              </div>
-              <div class=" w-ful">
-                <img class="mx-auto" src="./image/ice-cream1.jpg" alt="">
-                <div class="space-y-1 text-center">
-                  <h1 class="text-xl font-semibold text-black">Sustainable Practice</h1>
-                  <h1 class="w-20 h-0 border mx-auto"></h1>
-                  <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-                </div>
-              </div>
-              <div class=" w-ful">
-                <img class="mx-auto" src="./image/like1.jpg" alt="">
-                <div class="space-y-1 text-center">
-                  <h1 class="text-xl font-semibold text-black">The Benefits Only</h1>
-                  <h1 class="w-20 h-0 border mx-auto"></h1>
-                  <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-                </div>
-              </div>
-            </div>
-            </div>
-        </div>
-
-      </section>
-
-    </main>
-
-    <!-- ==================== Footer Section================= -->
-    <footer class="bg-[#121212] lg:p-20">
-      <div class="">
-        <div class="flex items-center gap-3 text-white justify-center">
-          <img class="w-[30px] h-[30px]" src="./image/logo.png" alt="" />
-          <h1 class="lg:text-xl font-semibold">Fruit Burst</h1>
-        </div>
-        <div
-          class="text-white font-semibold mt-5 flex flex-wrap justify-center items-center gap-10"
-        >
-          <h1>Home</h1>
-          <h1>About Us</h1>
-          <h1>Shop</h1>
-          <h1>Support</h1>
-          <h1>All Fruits</h1>
-          <h1>My Account</h1>
-        </div>
-        <div class="flex justify-center items-center gap-5 mt-10">
-          <img class="rounded-xl text-white" src="./image/tw.jpg" alt="" />
-          <img class="rounded-xl text-white" src="./image/fb.jpg" alt="" />
-          <img class="rounded-xl text-white" src="./image/in.jpg" alt="" />
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- ============= Why Choose Us Section========== -->
+    <section class="max-w-7xl mx-auto w-full mb-10  ">
+      <div class="text-center">
+        <h1 class="font-bold text-black text-xl">Why Choose Us</h1>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+          literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <!-- ===================== -->
+      <div class="hidden lg:flex gap-5 lg:items-center mt-[48px]">
+        <div class="">
+          <div class="flex gap-5 items-center relative">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/group.jpg" alt="">
+            <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black">Dedicated Team</h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center relative mb-5 mt-5">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/love-1.jpg" alt="">
+            <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black">Fresh is Best</h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center relative">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/gift-box1.png" alt="">
+            <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black">Gift Certificates</h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+        <!-- ======================= -->
+        <div class="">
+          <img class="w-[300px] h-[300px]" src="./image/whychoose.png" alt="">
+        </div>
+        <!-- ============================ -->
+        <div class="">
+          <div class="flex gap-5 items-center relative">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/gift-box.png" alt="">
+            <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black">Integrated Supplier</h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center relative mb-5 mt-5">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/ice-cream1.jpg" alt="">
+            <img class="w-[35px] h-[35px] absolute top-6 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black">Sustainable Practice</h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center relative">
+            <img class="w-[24px] h-[24px] relative z-20 rounded-xl" src="./image/like1.jpg" alt="">
+            <img class="w-[35px] h-[35px] absolute top-3 -left-1" src="./image/Ellipse.jpg" alt="">
+            <div class="space-y-1">
+              <h1 class="text-xl font-semibold text-black"></h1>
+              <h1 class="w-20 h-0 border"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ************************************* -->
+
+      <div class="lg:hidden mt-[48px]">
+        <div class="mb-5">
+          <img class="w-[300px] h-[300px] mx-auto" src="./image/whychoose.png" alt="">
+        </div>
+        <!-- ================================ -->
+        <div class=" w-full mb-3">
+          <img class="mx-auto" src="./image/group.jpg" alt="">
+          <div class="space-y-1 text-center">
+            <h1 class="text-xl font-semibold text-black">Dedicated Team</h1>
+            <h1 class="w-20 h-0 border mx-auto"></h1>
+            <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+        <div class=" w-ful">
+          <img class="mx-auto" src="./image/love-1.jpg" alt="">
+          <div class="space-y-1 text-center">
+            <h1 class="text-xl font-semibold text-black">Fresh is Best</h1>
+            <h1 class="w-20 h-0 border mx-auto"></h1>
+            <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+        <div class=" w-ful mb-4 mt-4">
+          <img class="mx-auto" src="./image/gift-box1.png" alt="">
+          <div class="space-y-1 text-center">
+            <h1 class="text-xl font-semibold text-black">Gift Certificates</h1>
+            <h1 class="w-20 h-0 border mx-auto"></h1>
+            <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+
+        <!-- ============================ -->
+        <div class="space-y-4">
+          <div class=" w-ful">
+            <img class="mx-auto" src="./image/gift-box.png" alt="">
+            <div class="space-y-1 text-center">
+              <h1 class="text-xl font-semibold text-black">Integrated Supplier</h1>
+              <h1 class="w-20 h-0 border mx-auto"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class=" w-ful">
+            <img class="mx-auto" src="./image/ice-cream1.jpg" alt="">
+            <div class="space-y-1 text-center">
+              <h1 class="text-xl font-semibold text-black">Sustainable Practice</h1>
+              <h1 class="w-20 h-0 border mx-auto"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class=" w-ful">
+            <img class="mx-auto" src="./image/like1.jpg" alt="">
+            <div class="space-y-1 text-center">
+              <h1 class="text-xl font-semibold text-black">The Benefits Only</h1>
+              <h1 class="w-20 h-0 border mx-auto"></h1>
+              <p>Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== Footer Section================= -->
+  <footer class="bg-[#121212] lg:p-20">
+    <div class="">
+      <div class="flex items-center gap-3 text-white justify-center">
+        <img class="w-[30px] h-[30px]" src="./image/logo.png" alt="" />
+        <h1 class="lg:text-xl font-semibold">Fruit Burst</h1>
+      </div>
+      <div class="text-white font-semibold mt-5 flex flex-wrap justify-center items-center gap-10">
+        <h1>Home</h1>
+        <h1>About Us</h1>
+        <h1>Shop</h1>
+        <h1>Support</h1>
+        <h1>All Fruits</h1>
+        <h1>My Account</h1>
+      </div>
+      <div class="flex justify-center items-center gap-5 mt-10">
+        <img class="rounded-xl text-white" src="./image/tw.jpg" alt="" />
+        <img class="rounded-xl text-white" src="./image/fb.jpg" alt="" />
+        <img class="rounded-xl text-white" src="./image/in.jpg" alt="" />
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
